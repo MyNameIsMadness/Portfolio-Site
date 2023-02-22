@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-template-master",
+  "version": "1.0.0",
+  "description": "Portfolio ",
+  "main": "index.js",
+  "scripts": {
+    "start": "start index.html"
+  },
+  "author": "",
+  "license": "ISC"
+}
