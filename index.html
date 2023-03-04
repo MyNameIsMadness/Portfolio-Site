@@ -41,11 +41,11 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
@@ -65,7 +65,51 @@
     </div>
   </header>
 
+
+  
   <main role="main">
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              ★ Hi! My name is Madi! Currently I am in my last semester of my Computer Science Bachelor’s 
+              degree at the University of Minnesota - Twin Cities. I am working for Evan Suma Rosenberg 
+              as a teaching assistant for their Programming Interactive Computer Graphics & Games class. 
+              That class is included in my list of notable coursework alongside Virtual Reality & 3D 
+              Interaction, Fundamentals of Computer Graphics, Introduction to Artificial Intelligence, 
+              and User Interface Design, Implementation, & Evaluation! ★
+            </p>
+            <p>
+              ★ One of my main passions is applying Computer Graphics to ensure all people feel represented 
+              in online spaces. Many online spaces include some sort of character or avatar customization, 
+              many of which are now pretty diverse in the sense of skin color and hair styles, but most 
+              still lack options for diverse body types, different types of disability aids, and special 
+              articles of clothing such as hijabs. Whether it is inside a video game or virtual meeting 
+              room, people deserve to feel like they are accurately represented and included in that space. 
+              When people feel that their avatar accurately represents them, it can allow the user to have 
+              a more meaningful experience in that virtual space. I love that I can use pixels on a screen 
+              to empower people of all kinds! ★
+            </p>
+            <p>
+              ★ Some of my hobbies include streaming on Twitch, cuddling with my cat Loki, and recently 
+              I have started learning ukulele! ★
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="./images/Spring 2023 Resume.pdf" class="btn">My Resume</a>
+          </div>
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/NiceMadi.jpg" alt="Madi" width="600" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
     <!-- ***** Projects ***** -->
 
@@ -76,17 +120,19 @@
 
           <!-- Each div with the work__box class is a project. -->
 
-          
-
           <div class="work__box">
             <div class="work__text">
               <h3>Virtual Reality Dungeons and Dragons</h3>
               <p>
-                As a D&D player, I was disappointed to see that most VR attempts at D&D were still at a virtual table. Why force your players to sit in VR when you have infinite space? While it is still in early stages, I have created D&D environment that allows the players to have more freedom!
+                As a D&D player, I was disappointed to see that most VR attempts at D&D were still 
+                at a virtual table. Why force your players to sit in VR when you have infinite space? 
+                While it is still in early stages, I have created D&D environment that allows the players 
+                to have more freedom! The user can cycle through different maps, pick up and throw dice, 
+                and teleport around the map!
               </p>
               <ul class="work__list">
                 <li>VR Demo at 2:50 in video!</li>
-                <li>Developed in Unity!</li>
+                <li>Developed in Unity using C#!</li>
                 <li>Map Select UI!</li>
                 <li>Larger Dice with Realistic Physics!</li>
                 <li>Teleportation System!</li>
@@ -106,42 +152,20 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Rendering With Shaders</h3>
-              <p>
-                xxx
-              </p>
-              <ul class="work__list">
-                <li>xxx</li>
-                <li>xxx</li>
-                <li>xxx</li>
-                <li>xxx</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://csci-4611-spring-2022.github.io/assignment-5-MyNameIsMadness/" target="_blank" class="link__text">
-                  Interactive Demonstration! <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/MyNameIsMadness/Portfolio/tree/main/assignment-5-MyNameIsMadness-main/assignment-5-MyNameIsMadness-main/src/shaders" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/ShaderScreenshot.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
               <h3>Raytracer</h3>
               <p>
-                xxx
+                I wrote a raytracing program from scratch that reads in a custom input file describing the 
+                entire scene. This includes the location of the “eye”, however many lights are defined, 
+                and however many spheres are defined. This also includes the colors of those defined 
+                spheres, the field of view, the size of the image, the background color, the view direction, 
+                and the up direction. My program takes in all the definitions of these things and determines 
+                the color to show at each pixel of the output image.
               </p>
               <ul class="work__list">
-                <li>xxx</li>
-                <li>xxx</li>
-                <li>xxx</li>
-                <li>xxx</li>
+                <li>500+ lines of C++ code!</li>
+                <li>Reads in a fully customizable scene input file!</li>
+                <li>Renders output ASCII PPM images!</li>
+                <li>Example input PPM files in the Github link!</li>
               </ul>
 
               <div class="work__links">
@@ -162,13 +186,18 @@
             <div class="work__text">
               <h3>Space Minesweeper</h3>
               <p>
-                xxx
+                Do you like those retro space shooter games? I made one accessible right in your browser! 
+                Fly around in a little ship controlled by your mouse and click to shoot lasers! The speed 
+                of the ship is dependent on how far your mouse is from the center. The size of the stars 
+                determines how fast they travel which helps to create a sense of parallax and depth of 
+                space. Try it out and have some fun!
               </p>
               <ul class="work__list">
-                <li>xxx</li>
-                <li>xxx</li>
-                <li>xxx</li>
-                <li>xxx</li>
+                <li>Written in TypeScript!</li>
+                <li>Accessible right in your browser!</li>
+                <li>Uses parallax to create depth!</li>
+                <li>Speed of the ship is controlled by the user!</li>
+                <li>Check out the working demonstration!</li>
               </ul>
 
               <div class="work__links">
@@ -191,15 +220,55 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Dancing Robots</h3>
+              <h3>Rendering With Shaders</h3>
               <p>
-                xxx
+                This GLSL shader program allows the user to test out different shading styles on some 3D objects. 
+                The program uses per-pixel lighting and normals to create this effect. Users can select the shading 
+                style and object from the top-right menu. The main three shading styles include are Gouraud, Phong, 
+                and a Legend of Zelda inspired cartoon style. The yellow circle in the scene represents our light 
+                source and it can be set to be a point light or directional light. Users can click and drag to spin 
+                the object and the light. Want to test it out? Click the link below!
               </p>
               <ul class="work__list">
-                <li>xxx</li>
-                <li>xxx</li>
-                <li>xxx</li>
-                <li>xxx</li>
+                <li>Written in TypeScript!</li>
+                <li>Many object options!</li>
+                <li>Features Gouraud, Phong, and Cartoon style shading!</li>
+                <li>Light can be set to point or directional!</li>
+                <li>Check out the working demonstration!</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://csci-4611-spring-2022.github.io/assignment-5-MyNameIsMadness/" target="_blank" class="link__text">
+                  Interactive Demonstration! <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/MyNameIsMadness/Portfolio/tree/main/assignment-5-MyNameIsMadness-main/assignment-5-MyNameIsMadness-main/src/shaders" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/ShaderScreenshot.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Dancing Robots</h3>
+              <p>
+                This project originally featured dancing ants but I decided to take it in my own direction and change 
+                the models to be silly robots! The robots all use mocap data from Carnegie Mellon’s motion capture 
+                database to perform dances. The couple dances the salsa on loop while the user can control the solo 
+                dancer. The user can use the top-right menu to select from five different ballet moves for the solo 
+                dancer to perform. The motion capture database provided bone skeleton information that was used to 
+                create the bodies for the robots. Check it out by clicking the link below!
+              </p>
+              <ul class="work__list">
+                <li>Written in TypeScript!</li>
+                <li>Uses motion capture data from Carnegie Mellon!</li>
+                <li>Users can pick from five different ballet moves for the solo dancer!</li>
+                <li>The dancing couple loops!</li>
+                <li>Bone skeleton data was used to create the bodies!</li>
+                <li>Check out the working demonstration!</li>
               </ul>
 
               <div class="work__links">
@@ -238,34 +307,7 @@
       </div>
     </section> -->
 
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              ★ Hi! My name is Madi! Currently I am in my last semester of my Computer Science Bachelor’s degree at the University of Minnesota - Twin Cities. I am working for Evan Suma Rosenberg as a teaching assistant for their Programming Interactive Computer Graphics & Games class. That class is included in my list of notable coursework alongside Virtual Reality & 3D Interaction, Fundamentals of Computer Graphics, Introduction to Artificial Intelligence, and User Interface Design, Implementation, & Evaluation! ★
-            </p>
-            <p>
-              ★ One of my main passions is applying Computer Graphics to ensure all people feel represented in online spaces. Many online spaces include some sort of character or avatar customization, many of which are now pretty diverse in the sense of skin color and hair styles, but most still lack options for diverse body types, different types of disability aids, and special articles of clothing such as hijabs. Whether it is inside a video game or virtual meeting room, people deserve to feel like they are accurately represented and included in that space. When people feel that their avatar accurately represents them, it can allow the user to have a more meaningful experience in that virtual space. I love that I can use pixels on a screen to empower people of all kinds! ★
-            </p>
-            <p>
-              ★ Some of my other hobbies include streaming on Twitch, cuddling with my cat Loki, and recently I have started learning ukulele! ★
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="./images/Spring 2023 Resume.pdf" class="btn">My Resume</a>
-          </div>
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/NiceMadi.jpg" alt="Madi" width="600" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+    
 
   <!-- ***** Contact ***** -->
 
@@ -282,15 +324,8 @@
         <!-- Replace the email with yours -->
         <a href="mailto:madisyn2364@gmail.com" class="btn">madisyn2364@gmail.com</a>
       </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row"> 
-      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links"> 
+        <!-- Update the links to point to your accounts -->
         <!-- <li class="footer__social-link-item">
           <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
             <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
@@ -307,12 +342,19 @@
           </a>
         </li> -->
         <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/madisyn-vanasse-51bb20196/">
+          <a href="https://www.linkedin.com/in/madi-vanasse-51bb20196/">
             <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
+    </div>
+    
+  </section>
 
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row"> 
       <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
       <p>
         &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
